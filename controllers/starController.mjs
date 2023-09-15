@@ -90,7 +90,7 @@ export const postStart = async (req, res) => {
             "stellar_history": req.body.stellar_history
         }
 
-        res.status(201).json({
+        return res.status(201).json({
             message: 'Estrella creada perfectamente',
             nuevaEstrella: newStar
         })
